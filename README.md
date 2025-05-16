@@ -29,6 +29,25 @@ Quickly capture thoughts, ideas, and tasks into your Google Keep without disrupt
 
 Each workflow is documented with usage instructions within the Automator interface.
 
+## Testing
+
+This project includes comprehensive test coverage:
+
+- **Unit Tests**: Validate the structure and syntax of the workflow files
+- **Integration Tests**: Simulate running the workflows with various inputs
+- **URL Encoding Tests**: Verify correct encoding of special characters for web requests
+- **CI/CD**: GitHub Actions workflow automatically runs tests on push/PR
+
+To run tests locally:
+
+```bash
+cd tests
+./test_workflow.sh     # Run unit tests
+./integration_test.sh  # Run integration tests
+```
+
+See the [tests/README.md](tests/README.md) file for more details on testing.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
